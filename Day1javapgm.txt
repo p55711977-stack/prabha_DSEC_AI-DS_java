@@ -1,0 +1,125 @@
+import java.util.*;
+
+class Main {
+   
+ public static void main(String[] args) {
+  
+      Scanner sc=new Scanner(System.in);
+        
+      System.out.println("Enter studentname:");
+        
+      String studentname=sc.nextLine();
+        
+      System.out.println("Enter Age:");
+        
+      int Age=sc.nextInt();
+      
+      sc.nextLine();
+        
+      System.out.println("Enter grade:");
+       
+      String grade=sc.nextLine();
+       
+      System.out.println("Enter Placementstatus:");
+       
+      String Placementstatus=sc.nextLine();
+   
+    }
+
+}
+
+import java.util.*;
+
+class Main {
+
+    public static void main(String[] args) {
+
+       int population=80000;
+
+       float Price=1499.95f;
+
+       String Bloodgroup="A";
+
+       String Accountverified ="True";
+ 
+      String Employeename="Arun";
+ 
+      System.out.println(population);
+
+       System.out.println(Price);
+
+       System.out.println(Bloodgroup);
+ 
+       System.out.println(Accountverified);
+ 
+       System.out.println(Employeename); 
+  
+  }
+
+}
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter emp_Id:");
+        int emp_ID=sc.nextInt();
+        sc.nextLine();
+        System.out.println("Enter emp_name:");
+        String emp_name=sc.nextLine();
+        System.out.println("Enter branch:");
+        String branch=sc.nextLine();
+        System.out.println("Enter salary:");
+        Double salary=sc.nextDouble();
+        System.out.println("Enter experience:");
+        int experience=sc.nextInt();
+        
+    }
+}
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+    System.out.print("Java is simple and Java is powerful.");
+    }
+}
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        String Collegename ="DSEC";
+        String Department ="AI&DS";
+        String Course ="java programming";
+    System.out.println(Collegename);
+    System.out.println(Department);
+    System.out.println(Course); 
+    }
+}
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+    System.out.println("Hello,java!");
+    System.out.println("Welcome to programming");
+    System.out.println("My journey starts today."); 
+    }
+}
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter emp_Id:");
+        int emp_ID=sc.nextInt();
+        sc.nextLine();
+        System.out.println("Enter emp_name:");
+        String emp_name=sc.nextLine();
+        System.out.println("Enter branch:");
+        String branch=sc.nextLine();
+        System.out.println("Enter salary:");
+        Double salary=sc.nextDouble();
+        System.out.println("Enter experience:");
+        int experience=sc.nextInt();
+        
+    }
+}
