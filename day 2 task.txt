@@ -1,0 +1,92 @@
+class Main {
+    public static void main(String[] args){
+        int a=13;
+        int b=22;
+        String result=(%2==0)?"Even number":"Odd number";
+        System.out.println(result);
+        
+    }
+}
+
+class Main {
+    public static void main(String[] args){
+        int a=5;
+        int b=30;
+        // String result=(a>b)?"a is greater":"b is greater";
+        // result=(a==b)?"Equal":"not Equal";
+        System.out.println((a==b ? "Equal":(a>b?a:b)));
+        
+        
+    }
+}
+
+    
+class Main {
+    public static void main(String[] args){
+        int a=-9;
+        String result=(a>0)?"positive":(a<0)?"negative":"Zero";
+            System.out.println(result);
+            }
+}
+
+class Main {
+    public static void main(String[] args){
+        int age=18;
+        String result=(age>=18)?"eligible":"not eligible";
+        System.out.println(result);
+        
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        int a=15;
+        String res=(a%3==0 && a%5==0)? "divisible by both":"not divisible by both";
+        System.out.println(res);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        int a=15;
+        int b=20;
+        int c=38;
+        int largest=(a>=b && a>=c)?a:(b>=a && b>=c)? b:c;
+        System.out.println(largest);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        int a=-115;
+        //lastdigit%2==0;
+        String res=(a%2==0)?"Yes":"No";
+        System.out.println(res);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        int Tamil=85;
+        int English=50;
+        int Maths=70;
+        String res=(Tamil>=35 && English>=35 && Maths>=35)?"pass":"fail";
+        System.out.println(res);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        int orderamount=1500;
+        boolean premiummember=false;
+        String res=(orderamount>1000 || premiummember)?"free delivery":"no free delivery";
+        System.out.println(res);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        int purchaseamnt=1500;
+        double res=(purchaseamnt>=2000 )?purchaseamnt-(purchaseamnt*0.10):purchaseamnt;
+        System.out.println(res);
+    }
+}
