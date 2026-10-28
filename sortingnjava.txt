@@ -1,0 +1,135 @@
+class Main {
+    public static void main(String[] args) {
+
+        int a[] = {40, 10, 30, 20};
+
+        for (int i = 0; i < a.length - 1; i++) {
+            for (int j = 0; j < a.length - 1 - i; j++) {
+
+                if (a[j] > a[j + 1]) {
+                    int temp = a[j];
+                    a[j] = a[j + 1];
+                    a[j + 1] = temp;
+                }
+            }
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
+class Main {
+    public static void main(String[] args) {
+
+        int a[] = {40, 10, 30, 20};
+
+        for (int i = 0; i < a.length - 1; i++) {
+            int min = i;
+
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[j] < a[min]) {
+                    min = j;
+                }
+            }
+
+            int temp = a[i];
+            a[i] = a[min];
+            a[min] = temp;
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        int a[] = {40, 10, 30, 20};
+
+        for (int i = 1; i < a.length; i++) {
+            int key=a[i];
+            int j=i-1;
+
+          while(j>=0&&a[j]>key) {
+             a[j+1]=a[j];
+              j--;
+        }
+             a[j+1]=key;
+        }
+        for (int i = 1; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
+import java.util.Scanner;
+
+class Main {
+
+    static void mergesort(int a[], int left, int right) {
+
+        if (left < right) {
+            int mid = (left + right) / 2;
+
+            mergesort(a, left, mid);
+            mergesort(a, mid + 1, right);
+
+            merge(a, left, mid, right);
+        }
+    }
+
+    static void merge(int a[], int left, int mid, int right) {
+
+        int temp[] = new int[right - left + 1];
+
+        int i = left;
+        int j = mid + 1;
+        int k = 0;
+
+        while (i <= mid && j <= right) {
+            if (a[i] <= a[j]) {
+                temp[k++] = a[i++];
+            } else {
+                temp[k++] = a[j++];
+            }
+        }
+
+        while (i <= mid) {
+            temp[k++] = a[i++];
+        }
+
+        while (j <= right) {
+            temp[k++] = a[j++];
+        }
+
+        for (int x = 0; x < temp.length; x++) {
+            a[left + x] = temp[x];
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter array size:");
+        int n = sc.nextInt();
+
+        int a[] = new int[n];
+
+        System.out.println("Enter array elements:");
+
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+
+        mergesort(a, 0, n - 1);
+
+        System.out.println("Sorted array:");
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(a[i] + " ");
+        }
+
+        sc.close();
+    }
+}
